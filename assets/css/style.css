@@ -92,6 +92,11 @@ nav a:first-child{
 	padding-top: 130px;
 }
 
+.clearfix::after {
+	clear:both;
+	
+}
+
 .main-section {
 	background: #fff;
 	padding: 30px;
@@ -110,7 +115,7 @@ nav a:first-child{
 	margin-right:25px;
 }
 
-.sidebar {
+.side-bar {
 	background: #fff;
 	padding: 30px;
 	width: 100%;
@@ -118,9 +123,13 @@ nav a:first-child{
 	float: right;
 	border: 1px solid #ddd;
 	margin-bottom: 20px;
+
 }
 
-h3, .sidebar, h2 {
+#connect {
+	background-color: white
+}
+.sidebar, h2, h3 {
 	border-bottom:2px solid #eee;
 	padding-bottom: 20px;
 	margin-bottom: 15px;
@@ -148,4 +157,78 @@ footer {
 	color: #aaa;
 	font-size: 12px;
 	text-align: center;
+
+}
+
+.work {
+	width: 274px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	height:180px;
+	margin: 20px 0 25px;
+}
+
+.work:nth-child(even){
+	margin-right: 40px;
+}
+
+.work img{
+	width:100%;
+	border: 0 none;
+	opacity: .8;
+	height: 100%;
+	
+}
+
+.work h3 {
+	border-bottom: 0;
+	background: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	padding: 15px;
+	width: 100%;
+	line-height: 30px;
+	margin-bottom: 0;
+	font-weight: 300;
+}
+
+#contact-form ul {
+	margin bottom: 20px;
+}
+
+#contact-form li {
+	margin-bottom: 10px;
+}
+
+label,
+input [type=text],
+input [type=email],
+textarea {
+	display:block;
+	width: 100%;
+}
+
+input [type=text],
+input [type=email],
+textarea {
+	height: 35px;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+textarea {
+	height: 200px;
+}
+
+input[type=submit]{
+	background: #4aaaa5;
+	border: 0 none;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 30px;
+	cursor: pointer;
 }
